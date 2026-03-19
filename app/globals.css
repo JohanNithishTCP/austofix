@@ -1,26 +1,64 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ── Register design tokens as Tailwind utilities ─────────
+   Usage: bg-accent, text-primary, bg-card-bg, bg-cleanroom
+   Edit only here to retheme the entire site.
+   ──────────────────────────────────────────────────────── */
+@theme {
+  --color-accent:    #BDD630;
+  --color-primary:   #6CA033;
+  --color-card-bg:   #243B13;
+  --color-cleanroom: #5A8A15;
+  --font-sans: var(--font-poppins), Arial, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+*, *::before, *::after { box-sizing: border-box; }
+
+/* ── Common container ─────────────────────────────────────
+   Usage: add class="container" to any inner wrapper div.
+   Replaces the old ad-hoc "max-w-7xl mx-auto px-8" pattern.
+   ──────────────────────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: 1536px;   /* ~screen-2xl — wider than the old 1280px */
+  margin-inline: auto;
+  padding-inline: 2rem; /* 32px default */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* xs  — phones portrait */
+@media (max-width: 479px) {
+  .container { padding-inline: 1rem; }       /* 16px */
+}
+
+/* sm  — phones landscape / small tablets */
+@media (min-width: 480px) and (max-width: 767px) {
+  .container { padding-inline: 1.25rem; }    /* 20px */
+}
+
+/* md  — tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container { padding-inline: 1.5rem; }     /* 24px */
+}
+
+/* lg  — small laptops */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .container { padding-inline: 2rem; }       /* 32px */
+}
+
+/* xl  — desktops */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .container { padding-inline: 2.5rem; }     /* 40px */
+}
+
+/* 2xl — large monitors */
+@media (min-width: 1536px) {
+  .container { padding-inline: 3rem; }       /* 48px */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #555;
+  font-family: var(--font-poppins), Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
