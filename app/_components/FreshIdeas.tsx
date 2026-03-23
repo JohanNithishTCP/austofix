@@ -3,10 +3,6 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
-import ideaImg from "@/public/blank.png";
-import screw from "@/public/screw.png"; // replace with your image
-// replace with your image
-
 export default function FreshIdeas() {
   return (
     <section className="bg-[#6CA033] py-16 px-6">
@@ -14,21 +10,23 @@ export default function FreshIdeas() {
         {/* Left Image */}
         <div data-aos="fade-left" className="rounded-2xl overflow-hidden">
           <Image
-            src={ideaImg}
+            src="/austofixImages/blank.png"
             alt="idea"
+            width={1000}
+            height={600}
             className="w-full h-full object-cover"
           />
         </div>
-
         {/* Right Content */}
         <div data-aos="fade-right" className="text-white">
           {/* Small Title */}
           <p className="flex items-center gap-2 text-sm mb-3">
-            <span className="w-3 h-3 bg-[#6CA033] rounded-full">
+            <span className="relative w-3 h-3 bg-[#6CA033] rounded-full overflow-hidden">
               <Image
-                src={screw}
+                src="/austofixImages/screw.png"
                 alt="idea"
-                className="w-full h-full object-cover"
+                fill
+                className="object-contain p-px"
               />
             </span>
             Fresh Ideas

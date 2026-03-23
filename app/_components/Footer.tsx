@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import logo from "@/public/austofix.png";
 
 const Footer = () => {
   return (
@@ -11,7 +10,12 @@ const Footer = () => {
           {/* Logo & Newsletter - Spans 4/12 columns */}
           <div data-aos="fade-up" className="lg:col-span-4 flex flex-col">
             <div className="mb-4">
-              <Image src={logo} alt="Austo Fix" width={160} height={160} />
+              <Image
+                src="/austofixImages/austofix.png"
+                alt="Austo Fix"
+                width={160}
+                height={160}
+              />
             </div>
 
             <div className="space-y-4">

@@ -4,7 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronDown, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-import logo from "@/public/austofix.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -32,9 +31,11 @@ export default function Navbar() {
         {/* Logo */}
         <div className="w-40">
           <Image
-            src={logo}
+            src="/austofixImages/austofix.png"
             alt="logo"
-            className="object-contain w-full h-auto"
+            width={160}
+            height={50}
+            className="object-cover w-full h-auto"
           />
         </div>
 

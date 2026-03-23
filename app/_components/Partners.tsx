@@ -1,17 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import screw from "@/public/screw.png";
-
-import p1 from "@/public/partner1.png";
-import p2 from "@/public/partner2.png";
-import p3 from "@/public/partner3.png";
-import p4 from "@/public/partner4.png";
-import p5 from "@/public/partner5.png";
-import p6 from "@/public/partner6.png";
 
 export default function Partners() {
-  const partners = [p1, p2, p3, p4, p5, p6];
+  const partners = [
+    "/austofixImages/partner1.png",
+    "/austofixImages/partner2.png",
+    "/austofixImages/partner3.png",
+    "/austofixImages/partner4.png",
+    "/austofixImages/partner5.png",
+    "/austofixImages/partner6.png",
+  ];
 
   return (
     <section className="bg-[#f5f5f5] py-16 px-6">
@@ -20,11 +19,13 @@ export default function Partners() {
         <p
           data-aos="fade-up"
           className="flex justify-center items-center gap-2 text-[#6CA033] text-sm mb-3">
-          <span className="w-3 h-3 bg-[#5D9732] rounded-full">
+          <span className="w-3 h-3  rounded-full">
             <Image
-              src={screw}
+              src="/austofixImages/screw-1.png"
               alt="idea"
-              className="w-full h-full object-cover"
+              width={12}
+              height={12}
+              className="w-full h-full  object-contain p-px"
             />
           </span>
           Our Partners
@@ -48,6 +49,8 @@ export default function Partners() {
               <Image
                 src={logo}
                 alt={`partner-${index}`}
+                width={120}
+                height={48}
                 className="object-contain h-12 w-auto"
               />
             </div>

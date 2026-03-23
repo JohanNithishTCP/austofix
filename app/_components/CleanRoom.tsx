@@ -3,21 +3,19 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
-import ideaImg from "@/public/blank.png";
-import screw from "@/public/screw.png"; // replace with your image
-// replace with your image
-
 export default function CleanRoom() {
   return (
     <section className="bg-[#6CA033] py-16 px-6 ">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-stretch">
         {/* Left Content */}
         <div data-aos="fade-up" className="text-white">
           <p className="flex items-center gap-2 text-sm mb-3">
             <span className="w-3 h-3 rounded-full overflow-hidden">
               <Image
-                src={screw}
+                src="/austofixImages/screw.png"
                 alt="icon"
+                width={12}
+                height={12}
                 className="w-full h-full object-cover"
               />
             </span>
@@ -47,8 +45,10 @@ export default function CleanRoom() {
         {/* Right Image */}
         <div data-aos="fade-right" className="rounded-2xl overflow-hidden">
           <Image
-            src={ideaImg}
+            src="/austofixImages/blank.png"
             alt="idea"
+            width={1000}
+            height={600}
             className="w-full h-full object-cover"
           />
         </div>

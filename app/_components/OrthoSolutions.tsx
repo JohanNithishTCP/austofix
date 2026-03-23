@@ -2,16 +2,11 @@
 
 import Image from "next/image";
 
-import nails from "@/public/img.png";
-import plates from "@/public/img (1).png";
-import screws from "@/public/img (2).png";
-import screw from "@/public/screw.png";
-
 export default function OrthoSolutions() {
   const products = [
-    { name: "Nails", img: nails },
-    { name: "Plates", img: plates },
-    { name: "Screws", img: screws },
+    { name: "Nails", img: "/austofixImages/img.png" },
+    { name: "Plates", img: "/austofixImages/img (1).png" },
+    { name: "Screws", img: "/austofixImages/img (2).png" },
   ];
 
   return (
@@ -21,10 +16,12 @@ export default function OrthoSolutions() {
         <p
           data-aos="fade-up"
           className="flex justify-center items-center gap-2 text-[#6CA033] text-sm mb-3">
-          <span className="w-3 h-3 bg-[#6CA033] rounded-full">
+          <span className="w-3 h-3  rounded-full">
             <Image
-              src={screw}
+              src="/austofixImages/screw-1.png"
               alt="idea"
+              width={12}
+              height={12}
               className="w-full h-full object-cover"
             />
           </span>
@@ -60,6 +57,8 @@ export default function OrthoSolutions() {
                 <Image
                   src={item.img}
                   alt={item.name}
+                  width={500}
+                  height={224}
                   className="w-full h-full object-cover hover:scale-105 transition duration-500"
                 />
               </div>

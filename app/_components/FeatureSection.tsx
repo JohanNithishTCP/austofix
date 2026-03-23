@@ -1,8 +1,6 @@
 import React from "react";
 import { PlusCircle, ArrowUpRight, Hexagon } from "lucide-react";
-import screw from "@/public/screw.png";
 import Image from "next/image";
-import ideaImg from "@/public/blank.png";
 
 const FeatureSection = () => {
   const firstTwoFeatures = [
@@ -17,11 +15,12 @@ const FeatureSection = () => {
         {/* Left Side: Placeholder Image Area */}
         <div
           data-aos="fade-left"
-          className="w-full  bg-gray-100 rounded-2xl overflow-hidden border border-gray-200">
-          {/* Replace with your <Image /> component */}
+          className="w-full bg-gray-100 rounded-2xl overflow-hidden border border-gray-200">
           <Image
-            src={ideaImg}
+            src="/austofixImages/blank.png"
             alt="idea"
+            width={1000}
+            height={600}
             className="w-full h-full object-cover"
           />
         </div>
@@ -32,11 +31,13 @@ const FeatureSection = () => {
           <div className="text-[#6CA033] ">
             {/* Small Title */}
             <p className="flex items-center gap-2 text-sm mb-3">
-              <span className="w-3 h-3 bg-[#6CA033] rounded-full">
+              <span className="w-3 h-3  rounded-full">
                 <Image
-                  src={screw}
+                  src="/austofixImages/screw-1.png"
                   alt="idea"
-                  className="w-full h-full object-cover"
+                  width={12}
+                  height={12}
+                  className="w-full h-full object-contain p-px"
                 />
               </span>
               what we will offer?

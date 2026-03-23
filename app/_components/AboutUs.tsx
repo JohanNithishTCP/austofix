@@ -2,25 +2,20 @@
 
 import Image from "next/image";
 
-import building from "@/public/building.png"; // main image
-import img1 from "@/public/machine1.png";
-import img2 from "@/public/machine2.png";
-import img3 from "@/public/machine3.png";
 import { ArrowUpRight } from "lucide-react";
-import screw from "@/public/screw.png";
 
 export default function AboutUs() {
   const features = [
     {
-      img: img1,
+      img: "/austofixImages/machine1.png",
       text: "Rapid turn-around by in-house 3D printing and biomechanical testing.",
     },
     {
-      img: img2,
+      img: "/austofixImages/machine2.png",
       text: "Equipped with in-house CMM, vision system, cleanroom, and sterilization.",
     },
     {
-      img: img3,
+      img: "/austofixImages/machine3.png",
       text: "Single-column force testing.",
     },
   ];
@@ -35,11 +30,12 @@ export default function AboutUs() {
             <div className="text-[#6CA033] ">
               {/* Small Title */}
               <p className="flex items-center gap-2 text-sm mb-2">
-                <span className="w-3 h-3 bg-[#5D9732] rounded-full">
+                <span className="relative w-3 h-3 rounded-full">
                   <Image
-                    src={screw}
+                    src="/austofixImages/screw-1.png"
                     alt="idea"
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
                   />
                 </span>
                 About Us
@@ -78,11 +74,12 @@ export default function AboutUs() {
           </div>
 
           {/* Right Image */}
-          <div data-aos="fade-up">
+          <div className="relative w-full h-100" data-aos="fade-up">
             <Image
-              src={building}
+              src="/austofixImages/building.png"
               alt="building"
-              className="rounded-2xl object-cover w-full h-full"
+              fill
+              className="rounded-2xl object-cover"
             />
           </div>
         </div>
