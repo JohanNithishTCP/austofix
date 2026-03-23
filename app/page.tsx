@@ -1,11 +1,11 @@
-import AboutUs from "@/app/_components/AboutUs";
-import BannerSlider from "@/app/_components/BannerSlider";
-import CleanRoom from "@/app/_components/CleanRoom";
-import FeatureSection from "@/app/_components/FeatureSection";
-import Footer from "@/app/_components/Footer";
-import FreshIdeas from "@/app/_components/FreshIdeas";
-import OrthoSolutions from "@/app/_components/OrthoSolutions";
-import Partners from "@/app/_components/Partners";
+import AboutUs from "./_components/AboutUs";
+import BannerSlider from "./_components/BannerSlider";
+import CleanRoom from "./_components/CleanRoom";
+import FeatureSection from "./_components/FeatureSection";
+import Footer from "./_components/Footer";
+import FreshIdeas from "./_components/FreshIdeas";
+import OrthoSolutions from "./_components/OrthoSolutions";
+import Partners from "./_components/Partners";
 
 export default function Home() {
   return (

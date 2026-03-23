@@ -7,15 +7,15 @@ import { ArrowUpRight } from "lucide-react";
 export default function AboutUs() {
   const features = [
     {
-      img: "/austofixImages/machine1.png",
+      img: "/austofix/machine1.png",
       text: "Rapid turn-around by in-house 3D printing and biomechanical testing.",
     },
     {
-      img: "/austofixImages/machine2.png",
+      img: "/austofix/machine2.png",
       text: "Equipped with in-house CMM, vision system, cleanroom, and sterilization.",
     },
     {
-      img: "/austofixImages/machine3.png",
+      img: "/austofix/machine3.png",
       text: "Single-column force testing.",
     },
   ];
@@ -32,7 +32,7 @@ export default function AboutUs() {
               <p className="flex items-center gap-2 text-sm mb-2">
                 <span className="relative w-3 h-3 rounded-full">
                   <Image
-                    src="/austofixImages/screw-1.png"
+                    src="/austofix/screw-1.png"
                     alt="idea"
                     fill
                     className="object-cover"
@@ -76,7 +76,7 @@ export default function AboutUs() {
           {/* Right Image */}
           <div className="relative w-full h-100" data-aos="fade-up">
             <Image
-              src="/austofixImages/building.png"
+              src="/austofix/building.png"
               alt="building"
               fill
               className="rounded-2xl object-cover"

@@ -17,7 +17,7 @@ const FeatureSection = () => {
           data-aos="fade-left"
           className="w-full bg-gray-100 rounded-2xl overflow-hidden border border-gray-200">
           <Image
-            src="/austofixImages/blank.png"
+            src="/austofix/blank.png"
             alt="idea"
             width={1000}
             height={600}
@@ -33,7 +33,7 @@ const FeatureSection = () => {
             <p className="flex items-center gap-2 text-sm mb-3">
               <span className="w-3 h-3  rounded-full">
                 <Image
-                  src="/austofixImages/screw-1.png"
+                  src="/austofix/screw-1.png"
                   alt="idea"
                   width={12}
                   height={12}

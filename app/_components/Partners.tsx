@@ -4,12 +4,12 @@ import Image from "next/image";
 
 export default function Partners() {
   const partners = [
-    "/austofixImages/partner1.png",
-    "/austofixImages/partner2.png",
-    "/austofixImages/partner3.png",
-    "/austofixImages/partner4.png",
-    "/austofixImages/partner5.png",
-    "/austofixImages/partner6.png",
+    "/austofix/partner1.png",
+    "/austofix/partner2.png",
+    "/austofix/partner3.png",
+    "/austofix/partner4.png",
+    "/austofix/partner5.png",
+    "/austofix/partner6.png",
   ];
 
   return (
@@ -21,7 +21,7 @@ export default function Partners() {
           className="flex justify-center items-center gap-2 text-[#6CA033] text-sm mb-3">
           <span className="w-3 h-3  rounded-full">
             <Image
-              src="/austofixImages/screw-1.png"
+              src="/austofix/screw-1.png"
               alt="idea"
               width={12}
               height={12}

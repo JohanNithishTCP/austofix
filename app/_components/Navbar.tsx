@@ -31,7 +31,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="w-40">
           <Image
-            src="/austofixImages/austofix.png"
+            src="/austofix/austofix.png"
             alt="logo"
             width={160}
             height={50}

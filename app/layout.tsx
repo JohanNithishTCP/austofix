@@ -1,7 +1,7 @@
-import Navbar from "@/app/_components/Navbar";
+import Navbar from "./_components/Navbar";
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import SmoothAOS from "@/app/_components/SmoothAOS";
+import SmoothAOS from "./_components/SmoothAOS";
 import { Metadata } from "next";
 
 const poppins = Poppins({
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     "Austofix delivers advanced medical and clean room solutions with high precision and quality.",
   icons: {
-    icon: "/austofixImages/austofix.png",
+    icon: "/austofix/austofix.png",
   },
 };
 export default function Layout({ children }: { children: React.ReactNode }) {
